@@ -79,13 +79,11 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
   primary: &primary_production
     <<: *default
-    username: <%= ENV["POSTGRES_USER"] %>
-    database: <%= ENV["POSTGRES_DB"] %>
-    password: <%= ENV["POSTGRES_PASSWORD"] %>
-    host: <%= ENV["DB_HOST"] %>
-    port: <%= ENV["DB_PORT"] %>
+    database: widgetfactory_production
   cache:
     <<: *primary_production
     database: widgetfactory_production_cache
