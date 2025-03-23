@@ -1,24 +1,7 @@
-# README
+This is just an example app that uses Rails 8 and Kamal 2 to deploy to a Digital Ocean Droplet.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's got a a postgres accessory for the database and was setup using tailwindcss with the `-c tailwind` flag.
 
-Things you may want to cover:
+I wrote more about the postgres configuration in this guide:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[How to configure Postgres as an Accessory with Kamal 2 and Rails 8 on a single server](https://railsboilerplate.com/articles/how-to-configure-postgres-accessory-kamal-2-rails-8)
