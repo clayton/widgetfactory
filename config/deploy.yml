@@ -92,6 +92,21 @@ builder:
 #   user: app
 
 # Use accessory services (secrets come from .kamal/secrets).
+accessories:
+  postgres:
+      image: postgres:15
+      host: 64.227.103.133
+      port: "127.0.0.1:5432:5432"
+      env:
+        clear:
+          POSTGRES_USER: widgetfactory
+          POSTGRES_DB: widgetfactory_production
+        secret:
+          - POSTGRES_PASSWORD
+      directories:
+        - data:/var/lib/postgresql/data
+      files:
+        - db/production_setup.sql:/docker-entrypoint-initdb.d/setup.sql
 # accessories:
 #   db:
 #     image: mysql:8.0
