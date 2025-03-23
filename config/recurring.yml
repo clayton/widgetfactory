@@ -11,5 +11,5 @@
 
 production:
   delete_widgets:
-    task: widgets:delete_all
+    command: "Widget.delete_all"
     schedule: every hour
