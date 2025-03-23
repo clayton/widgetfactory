@@ -10,6 +10,10 @@
 
     <%= yield :head %>
 
+    <% unless Rails.env.local? %>
+      <script defer src="https://s.c18h.net/script.js" data-website-id="ce79b27f-977b-45d4-baef-930ee0d91ca9"></script>
+    <% end %>
+
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 

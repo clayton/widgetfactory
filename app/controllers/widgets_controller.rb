@@ -1,4 +1,6 @@
 class WidgetsController < ApplicationController
+  rate_limit to: 4, within: 1.minute
+
   before_action :set_widget, only: %i[ show edit update destroy ]
 
   # GET /widgets or /widgets.json
