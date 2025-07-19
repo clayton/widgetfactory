@@ -7,7 +7,7 @@ image: claytonlz/widgetfactory
 # Deploy to these servers.
 servers:
   web:
-    - 64.227.103.133
+    - 5.78.43.72
   # job:
   #   hosts:
   #     - 192.168.0.1

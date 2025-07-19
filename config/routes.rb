@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ModernQueueDashboard::Engine, at: "/queue-dashboard"
   resources :widgets
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

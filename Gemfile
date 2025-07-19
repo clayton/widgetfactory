@@ -63,3 +63,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "modern_queue_dashboard", path: "../modern_queue_dashboard"
