@@ -96,8 +96,8 @@ builder:
 accessories:
   postgres:
       image: postgres:15
-      host: 64.227.103.133
-      port: "127.0.0.1:5432:5432"
+      host: 5.78.43.72
+      port: "127.0.0.1:54321:5432"
       env:
         clear:
           POSTGRES_USER: widgetfactory
