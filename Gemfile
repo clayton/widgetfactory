@@ -64,4 +64,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "modern_queue_dashboard", path: "../modern_queue_dashboard"
+gem "modern_queue_dashboard"
